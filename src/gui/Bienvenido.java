@@ -181,7 +181,15 @@ public class Bienvenido extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonMultiplicarActionPerformed
 
     private void BotonDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonDividirActionPerformed
-      
+         try {
+            Double num1 = Double.parseDouble(campoNumero1.getText());
+            Double num2 = Double.parseDouble(campoNumero2.getText());
+            Double resultado = num1 / num2;
+            String textoResultado = Double.toString(resultado);
+            campoResultado.setText(textoResultado);
+        } catch(NumberFormatException nfe) {
+            JOptionPane.showMessageDialog(this, "Solo se aceptan Numeros");
+        }
         // TODO add your handling code here:
     }//GEN-LAST:event_BotonDividirActionPerformed
 
