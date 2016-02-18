@@ -168,7 +168,7 @@ public class Bienvenido extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonRestaActionPerformed
 
     private void BotonMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonMultiplicarActionPerformed
-        try {
+          try {
             int num1 = Integer.parseInt(campoNumero1.getText());
             int num2 = Integer.parseInt(campoNumero2.getText());
             int resultado = num1 * num2;
@@ -176,20 +176,12 @@ public class Bienvenido extends javax.swing.JFrame {
             campoResultado.setText(textoResultado);
         } catch(NumberFormatException nfe ) {
             JOptionPane.showMessageDialog(this, "Solo se admiten Numeros");
-        }
+        }     
 // TODO add your handling code here:
     }//GEN-LAST:event_BotonMultiplicarActionPerformed
 
     private void BotonDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonDividirActionPerformed
-        try {
-            Double num1 = Double.parseDouble(campoNumero1.getText());
-            Double num2 = Double.parseDouble(campoNumero2.getText());
-            Double resultado = num1 / num2;
-            String textoResultado = Double.toString(resultado);
-            campoResultado.setText(textoResultado);
-        } catch(NumberFormatException nfe) {
-            JOptionPane.showMessageDialog(this, "Solo se aceptan Numeros");
-        }
+      
         // TODO add your handling code here:
     }//GEN-LAST:event_BotonDividirActionPerformed
 
